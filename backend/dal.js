@@ -1,48 +1,58 @@
 // dal.js
 
-
-
-// getPressChange has a max 10 pt score
-function getPressChange(){
+// getCurrentLocation pings the API / device? for GPS location - (lat, long)
+function getCurrentLocation(){
 
 }
 
-// getTempChange has a max 40 pt score
-function getTempChange(){
+// getCurrentPress pings the API / device? for current pressure
+function getCurrentPress(){
+  
+}
+
+// calPressChange has a max 10 pt score
+function calPressChange(){
 
 }
 
-// getExtremeConditions has a max 10 pt score
-function getExtremeConditions(){
+// calTempChange has a max 40 pt score
+function calTempChange(){
 
 }
 
-// getMaxWind has a max 10 pt score
-function getMaxWind(){
+// calExtremeConditions has a max 10 pt score
+function calExtremeConditions(){
 
 }
 
-// getHuntWindSpeed has a max 5 pt score
-function getHuntWindSpeed(){
+// calMaxWind has a max 10 pt score
+function calMaxWind(){
 
 }
 
-// getHuntDay is a coefficient to multiply the total value by - day 1 = *1; day 2 = *.67; day 3 = *.33
-function getHuntDay(){
+// calHuntWindSpeed has a max 5 pt score
+function calHuntWindSpeed(){
 
 }
 
-// getMoonPhase is either +5 or -5
-function getMoonPhase(){
+// calHuntDay is a coefficient to multiply the total value by - day 1 = *1; day 2 = *.67; day 3 = *.33
+function calHuntDay(){
+
+}
+
+// calMoonPhase is either +5 or -5
+function calMoonPhase(){
 
 }
 
 module.exports = {
-  getPressChange,
-  getTempChange,
-  getExtremeConditions,
-  getMaxWind,
-  getHuntWindSpeed,
-  getHuntDay,
-  getMoonPhase
+  getCurrentLocation,
+  getCurrentPress,
+  calPressChange,
+  calTempChange,
+  calExtremeConditions,
+  calMaxWind,
+  calHuntWindSpeed,
+  calHuntDay,
+  calMoonPhase
 }
